@@ -1,20 +1,44 @@
 % Paul Givens
 
 \documentclass[letterpaper]{article}
+
 \usepackage{ amssymb }
+\usepackage{mathrsfs}
+
 \title{Exercises from Mordechai}
 \author{Paul Givens}
+
+\setlength\parindent{0pt}
+
 \begin{document}
 \maketitle
 2.9) 
 
 \textbf{Show:}
-$ (A\wedge B\rightarrow C)\vDash (A\rightarrow C)\vee (B\rightarrow C)) $
+$ (p \wedge q \rightarrow r) \vDash (p \rightarrow r) \vee (q \rightarrow r)) $
 \\[1ex]
 
-$ \neg(A \wedge B) \vee C \vDash \neg A \vee (\neg B \vee C) $
+$ \neg (p \wedge q) \vee r \vDash \neg p \vee (\neg q \vee r) $
 
-$ \neg A \vee \neg B \vee C \vDash \neg A \vee \neg B \vee C$ 
+$ \neg p \vee \neg q \vee r \vDash \neg p \vee \neg q \vee r $ 
+
+\textbf{Q.E.D.}
+\\[1ex]
+
+\textbf{Show:}
+$ p \wedge q \rightarrow r \nvDash p \rightarrow r $
+\\[1ex]
+
+If we are to show that $ p \rightarrow r $ is not a logical consequence of
+$ p \wedge q \rightarrow r $ we must show that $ \exists $ a model
+$ \mathscr{I} $ that satisfies $ p \wedge q \rightarrow r $ and does not 
+satisfy $ p \rightarrow r $ this is because by definition 
+$ U \vDash p $ iff every model U is a model of p 
+
+let $ \mathscr{I} = \{ p = t, q = f, r = f\}$ 
+
+$ \mathscr{I} $ is true for $ p \rightarrow r $ and false for 
+$ p \wedge q \rightarrow r $
 
 \textbf{Q.E.D.}
 
