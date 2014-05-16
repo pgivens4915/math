@@ -44,13 +44,27 @@ $ p \wedge q \rightarrow r $
 \\[1ex]
 
 \textbf{2.44: Prove:}
-if U is satisfiable then $ U - \{A _{i} \} $ is satisfiable $ \forall $ $i$ 
+If U is satisfiable then $ U - \{A _{i} \} $ is satisfiable $ \forall $ $i$ 
 \\[1ex]
 
 Since there exists a $ \mathscr{I} $ for U such that $V_{\mathscr{I}} = T $ 
 $\forall i$ and $  U - \{A _{i} \} \subset U$ that implies that $U'$ 
 where $U' =  U - \{A _{i} \}$ has an interpretation $\mathscr{I}'$ such that 
 $V_{\mathscr{I}'} = T $ $\forall i$ since $\mathscr{I}' \subset \mathscr{I}$
+this means that $U'$ is satisfiable.
 
 \textbf{Q.E.D.}
+\\[1ex]
+
+\textbf{2.45: Prove:}
+If U is satisfiable and B is valid, then $ U \cup \{B\} $ is satisfiable
+\\[1ex]
+
+U is satisfiable so there exists an $\mathscr{I}$ such that $v_{\mathscr{I}}
+(A_{i}) = T \forall$ $i$ and B is valid so any interpretation will be true
+including the interpretation $\mathscr{I}$. Since we have an interpretation
+I that is true for U and B, $U \cup \{B\} $ is satisfiable
+
+\textbf{Q.E.D}
+
 \end{document}
