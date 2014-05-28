@@ -80,6 +80,18 @@ The union of B does not change I
 Trivial
 
 \textbf{Case 1:}
-The Union of B causes $I'$
 
+The Union of B causes $I'$ which is equal to $I$, this is trivial.
+
+\textbf{Case 2:}
+
+The Union of B causes $I'$ which is smaller than $I$.  Since $I' \cup I$ $I'$
+shrinks, so it consists of models of A.
+
+\textbf{Case 3:}
+
+The Union of B causes $I'$ which is larger than $I$.  I will show this to be 
+impossible by contradiction.  Assume $I \subseteq I'$, this means there is
+some model $ M \notin I $ but $M \in I'$.  That means there was some atom a
+that was assigned a value v that evaluated false but now evaluated true. But this is absurd since adding B can not make prior elements true.
 \end{document}
